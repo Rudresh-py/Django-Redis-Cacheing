@@ -14,7 +14,7 @@
             <input class="form-control" name="recipe" placeholder="Search" style="width:400px">
             <button class="btn btn-primary">Search</button>
         </div>
-    </form>
+        </form>
 
     </div>
 
@@ -36,7 +36,7 @@
             <tbody>
                 {% for r in recipe %}
 
-                <tr class="pt-4">
+                <tr class="pt-4 mb-4">
 
                 <td>{{r.name}}</td>
                 <td>{{r.desc|truncatechars:250}}</td>
@@ -49,6 +49,7 @@
                 {% endfor %}
                 <hr>
             </tbody>
+
 
 
         </table>

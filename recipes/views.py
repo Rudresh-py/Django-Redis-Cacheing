@@ -7,6 +7,12 @@ from django.core.cache import cache
 
 CACHE_TTL = getattr(settings, 'CACHE_TTL', DEFAULT_TIMEOUT)
 
+def create_recipe(request):
+    name = request.GET.get('name')
+    desc = request.GET.get('desc')
+    image = request.GET
+
+
 
 def get_recipe(filter_recipe=None):
     if filter_recipe:
